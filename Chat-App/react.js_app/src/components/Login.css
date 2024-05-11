@@ -1,0 +1,163 @@
+.login-container {
+    background-image: url('https://wallpapercave.com/wp/wp6125905.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.login h2 {
+    font-size: 30px;
+    margin: 20px 0 10px 0;
+    color: #24221b;
+}
+
+.login .display {
+    color: #fad533;
+    font-size: 16px;
+    margin-top: 4px;
+    font-weight: 550;
+}
+
+.login .display::after{
+    content: ' ❌';
+}
+
+.login form {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 30vw;
+    background: linear-gradient(rgba(135, 207, 235, 0.400), rgba(238, 130, 238, 0.400));
+    box-shadow: 3px 3px 4px rgb(56, 56, 56);
+}
+
+.login form label {
+    color: #fad533;
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login form input {
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+
+#login-btn {
+    width: 30%;
+    margin: 15px 0;
+    margin-left: calc(70% / 2);
+    background-color: #99f4b6;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+#login-btn:hover{
+    box-shadow: 2px 2px #d4b31e;
+}
+
+.login a {
+    width: 20%;
+    padding: 8px;
+    margin-left: calc(80% / 2 - 8px);
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #fad533;
+}
+
+.login p{
+    margin-bottom: 10px;
+}
+
+.login a p {
+    display: inline;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.login a p:hover{
+    border-bottom: 2px solid #aa9123;
+}
+
+@media screen and (max-width: 800px) {
+    .login h2 {
+        font-size: 25px;
+    }
+
+    .login form label{
+        font-size: 18px;
+    }
+
+    .login .display {
+        font-size: 15px;
+    }
+
+    .login form input{
+        font-size: 16px;
+    }
+
+    #login-btn {
+        font-size: 18px;
+    }
+
+    .login a {
+        width: 30%;
+        margin-left: calc(70% / 2  - 8px);
+    }
+
+    .login a p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login h2 {
+        font-size: 20px;
+    }
+
+    .login form label{
+        font-size: 16px;
+    }
+
+    .login form input{
+        font-size: 14px;
+    }
+
+    .login .display {
+        font-size: 12px;
+    }
+
+    #login-btn {
+        width: 40%;
+        margin-left: calc(60% / 2);
+        font-size: 16px;
+    }
+
+    .login a {
+        width: 40%;
+        margin-left: calc(60% / 2 - 8px);
+    }
+
+    .login a p {
+        font-size: 16px;
+    }
+}

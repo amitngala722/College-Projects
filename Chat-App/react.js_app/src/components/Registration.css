@@ -1,0 +1,100 @@
+body{
+    background-image: url(https://img.freepik.com/free-vector/colorful-3d-background_23-2148484152.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sign-up{
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.sign-up form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    height: 80vh;
+    width: 30vw;
+    color: rgb(35, 55, 157);
+    border-radius: 20px;
+    background: linear-gradient(rgba(80, 191, 235, 0.6), rgba(75, 199, 240, 0.6));
+    box-shadow: 3px 3px 4px rgb(109, 108, 108);
+}
+
+.sign-up input{
+    padding: 6px;
+    margin: 7px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#create-account-btn{
+    width: 30%;
+    margin: 20px auto;
+    background-color:rgb(116, 234, 167);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 550;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.sign-up a p{
+    color: rgb(18, 20, 21);
+    padding: 8px;
+    width: 20%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(217, 250, 215);
+}
+.sign-up a p:hover{
+    text-decoration: underline;
+}
+
+.pwd-message {
+    font-size: medium;
+}
+
+@media screen and (max-width: 800px) {
+    .sign-up form h2 {
+        font-size: 25px;
+    }
+
+    #create-account-btn {
+        width: 40%;
+    }
+
+    .sign-up a p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sign-up form h2 {
+        font-size: 20px;
+    }
+
+    .sign-up form label {
+        font-size: 15px;
+    }
+
+    .sign-up form input {
+        font-size: 13px;
+    }
+
+    #create-account-btn {
+        width: 60%;
+    }
+
+    .sign-up a p{
+        width: 30%;
+        font-size: 14px;
+    }
+}
